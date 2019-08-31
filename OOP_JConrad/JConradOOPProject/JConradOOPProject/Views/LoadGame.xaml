@@ -1,0 +1,61 @@
+﻿<UserControl x:Class="JConradOOPProject.Views.LoadGame"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="700">
+    <UserControl.Resources>
+        <Style TargetType="{x:Type ListBoxItem}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <ControlTemplate.Resources>
+                            <Style BasedOn="{StaticResource default-font}" TargetType="{x:Type TextBlock}">
+                                <Setter Property="FontSize" Value="19" />
+                                <Setter Property="Padding" Value="10" />
+                                <Setter Property="Foreground" Value="#231809" />
+                            </Style>
+                        </ControlTemplate.Resources>
+                        <StackPanel Name="PlayerStack" Background="#845f2f" Margin="0,0,0,2" Orientation="Horizontal">
+                            <TextBlock Name="PlayerName" Width="600" Text="{Binding Path=Name}" />
+                            <TextBlock Name="PlayerLevel" Width="90" Text="{Binding Path=Level, StringFormat='{}{0} LVL'}" />
+                        </StackPanel>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="PlayerStack" Property="Background" Value="#c28c46" />
+                                <Setter TargetName="PlayerStack" Property="Cursor" Value="Hand" />
+                            </Trigger>
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter TargetName="PlayerStack" Property="Background" Value="#3d7820" />
+                                <Setter TargetName="PlayerName" Property="Foreground" Value="White" />
+                                <Setter TargetName="PlayerLevel" Property="Foreground" Value="White" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="0,0,0,30">
+            <Canvas Width="700" Height="35">
+                <TextBlock Text="Load Game" Foreground="#412c11" FontSize="24" Style="{StaticResource default-font}" />
+            </Canvas>
+
+            <ListBox Name="SavedGamesList" Width="700" Height="400" Background="#412c11" BorderBrush="#211709" BorderThickness="2" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Opacity="0.9">
+                <!-- Dynamic Content -->
+            </ListBox>
+            <Canvas Width="700">
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel.Resources>
+                        <Style BasedOn="{StaticResource small-menu-button}" TargetType="{x:Type Button}" />
+                    </StackPanel.Resources>
+                    <Button Content="Play" Width="100" Height="30" IsDefault="True" Click="ButtonPlay_Click" />
+                    <Button Content="Back" Width="100" Height="30" Click="ButtonBack_Click" />
+                </StackPanel>
+            </Canvas>
+        </StackPanel>
+    </Grid>
+</UserControl>

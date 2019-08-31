@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RpgGame.Forms.Map" Collapsed="true">
+    <Position X="30" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgAAAAAgCKCAACAAAECEAAhCQAAAAAASAAABAAAABBA=</HashCode>
+      <FileName>Forms\Map.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.GameObject">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Program">
+    <Position X="31.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Sound.Sound">
+    <Position X="37.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAACAAAAAgAAAQEBIQAAAAAEAAAAAAIAAAAAAQAA=</HashCode>
+      <FileName>Sound\Sound.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Unit">
+    <Position X="8" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAgAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Unit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Enemies.Boss">
+    <Position X="15.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enemies\Boss.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Enemies.Enemy">
+    <Position X="11" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAgAAAAAAAAAAEAAAABAAIAIAAAAAAAAAAAQAAQAA=</HashCode>
+      <FileName>Enemies\Enemy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.262" />
+  </Class>
+  <Class Name="RpgGame.Enemies.Melee">
+    <Position X="7.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enemies\Melee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Enemies.Range">
+    <Position X="12.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enemies\Range.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Items.Armor">
+    <Position X="20" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Armor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Items.Boots">
+    <Position X="18" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Boots.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Items.Chainmail">
+    <Position X="19.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Chainmail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Items.Gloves">
+    <Position X="21.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Gloves.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Items.Helmet">
+    <Position X="23.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Helmet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Items.Item">
+    <Position X="20.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAABoAiIAQAggAAEAAAABAAIAABAAAAAQAAAAQAAACA=</HashCode>
+      <FileName>Items\Item.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RpgGame.Items.Potion">
+    <Position X="24" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Potion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Items.Scroll">
+    <Position X="18.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Scroll.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Items.Weapon">
+    <Position X="22.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Weapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Player.Mage">
+    <Position X="0.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAYAADAAAAAAAACAAgAAEAAAAAAAAAAAIAACAgA=</HashCode>
+      <FileName>Player\Mage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Player.Player">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CoIIIgyKQCAEiACAQAwAAAAYMIFEAAAhYBBiA4AQQCI=</HashCode>
+      <FileName>Player\Player.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RpgGame.Player.Rogue">
+    <Position X="3" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAACAQQgAAAAAAgAAQFAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Player\Rogue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Player.Warrior">
+    <Position X="5.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAgCAAAAAIAAAgAAAAEAAAAQAAAIBAAACEAAA=</HashCode>
+      <FileName>Player\Warrior.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Properties.Settings" Collapsed="true">
+    <Position X="30" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Enemies.MeleeType.Golem">
+    <Position X="6" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enemies\MeleeType\Golem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Enemies.MeleeType.Ork">
+    <Position X="8" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Enemies\MeleeType\Ork.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Enemies.MeleeType.Skeleton">
+    <Position X="10" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Enemies\MeleeType\Skeleton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Enemies.RangeType.Drake">
+    <Position X="12.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enemies\RangeType\Drake.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Enemies.RangeType.Goblin">
+    <Position X="14.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enemies\RangeType\Goblin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Enemies.RangeType.Shade">
+    <Position X="16.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Enemies\RangeType\Shade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Exceptions.NotEnoughDicePointsException">
+    <Position X="33.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\NotEnoughDicePointsException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.Properties.Resources" Collapsed="true">
+    <Position X="33.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgRAAAIgEBAANQoBARSBEMmwgb4mSYqkgRgDqGFECeA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.SaveAndLoad.Load">
+    <Position X="35.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCAAAAAAAAAAAAAAAAEAAAAAAAQAAAAAAAAAAAAAE=</HashCode>
+      <FileName>SaveAndLoad\Load.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RpgGame.SaveAndLoad.Save">
+    <Position X="37.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAABAAAAAAAACAA=</HashCode>
+      <FileName>SaveAndLoad\Save.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="RpgGame.Position">
+    <Position X="37.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Position.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="RpgGame.SaveAndLoad.SnapshotOfCharacter">
+    <Position X="39.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CgAIIAyAAAAEgAAgAAAAIAQQAAFEAAADQBBAAgJQQCA=</HashCode>
+      <FileName>SaveAndLoad\SnapshotOfCharacter.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="RpgGame.Interfaces.IAttack">
+    <Position X="35.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAttack.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RpgGame.Interfaces.ICharacter">
+    <Position X="33" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgIAAAyCACAACAAgQAQAAAQIEABAAAABABAgAwAAQCA=</HashCode>
+      <FileName>Interfaces\ICharacter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RpgGame.Interfaces.IDefend">
+    <Position X="30.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Interfaces\IDefend.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RpgGame.Interfaces.ITrade">
+    <Position X="35.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ITrade.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RpgGame.Interfaces.IUsable">
+    <Position X="35.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAgAAAAAIAAAAAAgAAAAAIAAAAA=</HashCode>
+      <FileName>Interfaces\IUsable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RpgGame.Interfaces.IItem">
+    <Position X="30.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAiIAQAgAAAAAAAABAQIAABAAAAAAAAAAQAAACA=</HashCode>
+      <FileName>Interfaces\IItem.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RpgGame.Interfaces.IEnemy">
+    <Position X="30.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAgAAAAAAAAAAkAAAABAAIAAAAAAAAAAAAAQAAQAA=</HashCode>
+      <FileName>Interfaces\IEnemy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RpgGame.Interfaces.IUnit">
+    <Position X="33" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IUnit.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="RpgGame.Pictures">
+    <Position X="27.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QGAFAFAAQBkAAAAQACAgABAABQAIAEAxQCEoAAIEEFA=</HashCode>
+      <FileName>Pictures.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

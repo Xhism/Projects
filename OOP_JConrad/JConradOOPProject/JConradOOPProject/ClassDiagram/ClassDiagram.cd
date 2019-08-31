@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="JConradOOPProject.GameObjects.Creatures.Bear" Collapsed="true">
+    <Position X="2.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAIAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Creatures\Bear.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JConradOOPProject.GameObjects.Creatures.Creature" Collapsed="true">
+    <Position X="6.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CQAACACAgIAKAAAAAAAACAQBAAgQAAAQAAAAAAAAMAI=</HashCode>
+      <FileName>GameObjects\Creatures\Creature.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="JConradOOPProject.GameObjects.Creatures.Enemy" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Creatures\Enemy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="JConradOOPProject.GameObjects.Creatures.EnemyLumberjack" Collapsed="true">
+    <Position X="5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Creatures\EnemyLumberjack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JConradOOPProject.GameObjects.Creatures.ForestGhost" Collapsed="true">
+    <Position X="7.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Creatures\ForestGhost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JConradOOPProject.GameObjects.Creatures.Lumberjack" Collapsed="true">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAWAIAIAAIAQCIAQQgAAAAmAAAgAAAIAgAAABI=</HashCode>
+      <FileName>GameObjects\Creatures\Lumberjack.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="JConradOOPProject.GameObjects.Tools.Shields.ChainArmour" Collapsed="true">
+    <Position X="11.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAEAAAAAAAIAAAAAACAAAAAgAAAAAA=</HashCode>
+      <FileName>GameObjects\Tools\Shields\ChainArmour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JConradOOPProject.GameObjects.Tools.Shields.Shield" Collapsed="true">
+    <Position X="13" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Tools\Shields\Shield.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JConradOOPProject.GameObjects.Tools.Shields.SweatCloth" Collapsed="true">
+    <Position X="14" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAEAAAAAAAIAAAAAACAAAAAgAAAAAA=</HashCode>
+      <FileName>GameObjects\Tools\Shields\SweatCloth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JConradOOPProject.GameObjects.Tools.Skills.Skill" Collapsed="true">
+    <Position X="16.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAwAiAAAAIAAAAAAAAAACAAAAAAADAAAQAAAA=</HashCode>
+      <FileName>GameObjects\Tools\Skills\Skill.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JConradOOPProject.GameObjects.Tools.Item" Collapsed="true">
+    <Position X="19.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAQAQAgEQAEIAEAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Tools\Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JConradOOPProject.GameObjects.Tools.Shop" Collapsed="true">
+    <Position X="30" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAgAAAAAgAAAAAAEAAAAEAQAAAA=</HashCode>
+      <FileName>GameObjects\Tools\Shop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JConradOOPProject.GameObjects.GameObject" Collapsed="true">
+    <Position X="15.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAgAAAAIEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JConradOOPProject.GameObjects.Position" Collapsed="true">
+    <Position X="31.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>GameObjects\Position.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JConradOOPProject.GameObjects.Tools.Weapons.Axe" Collapsed="true">
+    <Position X="18.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAQAABAEAAAAAAACBAAAAgAAAAAA=</HashCode>
+      <FileName>GameObjects\Tools\Weapons\Axe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JConradOOPProject.GameObjects.Tools.Weapons.Chopper" Collapsed="true">
+    <Position X="20.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAACBAAAAgAAAAAA=</HashCode>
+      <FileName>GameObjects\Tools\Weapons\Chopper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JConradOOPProject.GameObjects.Tools.Weapons.Cutter" Collapsed="true">
+    <Position X="23" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACABAAAgAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Tools\Weapons\Cutter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JConradOOPProject.GameObjects.Tools.Weapons.DoubleAxe" Collapsed="true">
+    <Position X="25.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAACAAAAAiBAAAAgAAAAAA=</HashCode>
+      <FileName>GameObjects\Tools\Weapons\DoubleAxe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JConradOOPProject.GameObjects.Tools.Weapons.Knife" Collapsed="true">
+    <Position X="27.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAACBAAAAgAAAAAA=</HashCode>
+      <FileName>GameObjects\Tools\Weapons\Knife.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JConradOOPProject.GameObjects.Tools.Weapons.Weapon" Collapsed="true">
+    <Position X="23" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Tools\Weapons\Weapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JConradOOPProject.ViewModels.BaseViewModel" Collapsed="true">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\BaseViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="JConradOOPProject.ViewModels.InputOutputSystem" Collapsed="true">
+    <Position X="30" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\InputOutputSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JConradOOPProject.ViewModels.GameEngine" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBEAAoCAgAAAAhAEghEAIACgAIAQAASBAgAAIACAAAo=</HashCode>
+      <FileName>ViewModels\GameEngine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="JConradOOPProject.Interfaces.IAttack" Collapsed="true">
+    <Position X="30" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAttack.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="JConradOOPProject.Interfaces.IMovable" Collapsed="true">
+    <Position X="31.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IMovable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="JConradOOPProject.GameObjects.Tools.Weapons.ColorEnum" Collapsed="true">
+    <Position X="30" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAADAAAAA=</HashCode>
+      <FileName>GameObjects\Tools\Weapons\ColorEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

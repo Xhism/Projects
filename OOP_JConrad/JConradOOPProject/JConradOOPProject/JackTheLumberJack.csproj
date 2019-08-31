@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{644050EE-A6A3-4A4D-9876-16F19662D923}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JConradOOPProject</RootNamespace>
+    <AssemblyName>JConradOOPProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Images/icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Commands\RelayCommand.cs" />
+    <Compile Include="Enumerations\EquipmentType.cs" />
+    <Compile Include="GameObjects\Creatures\Bear.cs" />
+    <Compile Include="GameObjects\Creatures\Enemy.cs" />
+    <Compile Include="GameObjects\Creatures\EnemyLumberjack.cs" />
+    <Compile Include="GameObjects\Creatures\ForestGhost.cs" />
+    <Compile Include="GameObjects\Creatures\Lumberjack.cs" />
+    <Compile Include="GameObjects\Tools\Item.cs" />
+    <Compile Include="GameObjects\Tools\Shields\ChainArmour.cs" />
+    <Compile Include="GameObjects\Tools\Shields\Shield.cs" />
+    <Compile Include="GameObjects\Tools\Shields\SweatCloth.cs" />
+    <Compile Include="GameObjects\Tools\Skills\oldAttack.cs" />
+    <Compile Include="GameObjects\Tools\Skills\oldDefence.cs" />
+    <Compile Include="GameObjects\Tools\Skills\Skill.cs" />
+    <Compile Include="GameObjects\Tools\Weapons\Axe.cs" />
+    <Compile Include="GameObjects\Tools\Weapons\Chopper.cs" />
+    <Compile Include="GameObjects\Tools\Weapons\ColorEnum.cs" />
+    <Compile Include="GameObjects\Tools\Weapons\Cutter.cs" />
+    <Compile Include="GameObjects\Tools\Weapons\DoubleAxe.cs" />
+    <Compile Include="GameObjects\Tools\Weapons\Knife.cs" />
+    <Compile Include="GameObjects\Tools\Weapons\Weapon.cs" />
+    <Compile Include="Interfaces\IAttack.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\BattleAnimationTaskThreading.cs" />
+    <Compile Include="ViewModels\GameEngine.cs" />
+    <Compile Include="GameParameters\GameParameters.cs" />
+    <Compile Include="Views\Battle.xaml.cs">
+      <DependentUpon>Battle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Equipment.xaml.cs">
+      <DependentUpon>Equipment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GameMap.xaml.cs">
+      <DependentUpon>GameMap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Intro.xaml.cs">
+      <DependentUpon>Intro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoadGame.xaml.cs">
+      <DependentUpon>LoadGame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainMenu.xaml.cs">
+      <DependentUpon>MainMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameObjects\Creatures\Creature.cs" />
+    <Compile Include="GameObjects\GameObject.cs" />
+    <Compile Include="GameObjects\Position.cs" />
+    <Compile Include="Interfaces\IMovable.cs" />
+    <Compile Include="Views\NewGame.xaml.cs">
+      <DependentUpon>NewGame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StartMenu.xaml.cs">
+      <DependentUpon>StartMenu.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Views\Battle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Equipment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GameMap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Intro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LoadGame.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MainMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NewGame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\StartMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="ClassDiagram\ClassDiagram1.cd" />
+    <Resource Include="Fonts\Caricaturista.ttf" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\button.png" />
+    <Resource Include="Images\button_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon.ico" />
+    <Resource Include="Images\main_menu_bg.jpg" />
+    <Resource Include="Images\menu_button.png" />
+    <Resource Include="Images\menu_button_click.png" />
+    <Resource Include="Images\menu_button_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\game_map.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\equipment_menu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Items\item.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\button_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\MapLocations\canidae_hover.png" />
+    <Resource Include="Images\MapLocations\canidae_normal.png" />
+    <Resource Include="Images\MapLocations\canidae_unavailable.png" />
+    <Resource Include="Images\MapLocations\grizzly_hover.png" />
+    <Resource Include="Images\MapLocations\grizzly_normal.png" />
+    <Resource Include="Images\MapLocations\rhodope_hover.png" />
+    <Resource Include="Images\MapLocations\rhodope_normal.png" />
+    <Resource Include="Images\MapLocations\rhodope_unavailable.png" />
+    <Resource Include="Images\MapLocations\sisharpovo_hover.png" />
+    <Resource Include="Images\MapLocations\sisharpovo_normal.png" />
+    <Resource Include="Images\MapLocations\telerik_hover.png" />
+    <Resource Include="Images\MapLocations\telerik_normal.png" />
+    <Resource Include="Images\MapLocations\telerik_unavailable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\main_intro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\loadgame_intro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\battle_intro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Items\Icons\axe.png" />
+    <Resource Include="Images\Items\Icons\chainsaw.png" />
+    <Resource Include="Images\Items\Icons\dualaxe.png" />
+    <Resource Include="Images\Items\Icons\knife.png" />
+    <Resource Include="Images\Items\Icons\machete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\health_level.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\BattleGrounds\grizzly.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

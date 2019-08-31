@@ -1,0 +1,159 @@
+﻿<UserControl x:Class="JConradOOPProject.Views.GameMap"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1000">
+    <UserControl.Resources>
+        
+        <Style x:Key="location-grizlly" TargetType="{x:Type Button}">
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Image Name="buttonbg" Source="../Images/MapLocations/grizzly_normal.png" Width="167" Height="162" Stretch="Fill"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="buttonbg" Property="Source" Value="../Images/MapLocations/grizzly_hover.png" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+        <Style x:Key="location-sisharpovo" TargetType="{x:Type Button}">
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Image Name="buttonbg" Source="../Images/MapLocations/sisharpovo_normal.png" Width="184" Height="160" Stretch="Fill"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="buttonbg" Property="Source" Value="../Images/MapLocations/sisharpovo_hover.png" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="location-canidae" TargetType="{x:Type Button}">
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Image Name="buttonbg" Source="../Images/MapLocations/canidae_normal.png" Width="201" Height="171" Stretch="Fill"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="buttonbg" Property="Source" Value="../Images/MapLocations/canidae_hover.png" />
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="buttonbg" Property="Source" Value="../Images/MapLocations/canidae_unavailable.png" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="location-telerik" TargetType="{x:Type Button}">
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Image Name="buttonbg" Source="../Images/MapLocations/telerik_normal.png" Width="163" Height="159" Stretch="Fill"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="buttonbg" Property="Source" Value="../Images/MapLocations/telerik_hover.png" />
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="buttonbg" Property="Source" Value="../Images/MapLocations/telerik_unavailable.png" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="location-rhodope" TargetType="{x:Type Button}">
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Image Name="buttonbg" Source="../Images/MapLocations/rhodope_normal.png" Width="262" Height="199" Stretch="Fill"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="buttonbg" Property="Source" Value="../Images/MapLocations/rhodope_hover.png" />
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="buttonbg" Property="Source" Value="../Images/MapLocations/rhodope_unavailable.png" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </UserControl.Resources>
+    <Grid>
+        <Image Source="../Images/game_map.jpg" Stretch="Fill" />
+        <Grid Width="890" Height="495">
+            <Grid.Resources>
+                <Style BasedOn="{StaticResource default-font}" TargetType="{x:Type TextBlock}">
+                    <Setter Property="TextAlignment" Value="Right" />
+                    <Setter Property="Foreground" Value="#9c3200" />
+                </Style>
+            </Grid.Resources>
+            <Grid x:Name="PlayerInfo" Width="150" Margin="0,20,13,0" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock FontSize="22" Text="{Binding Path=PlayerName}" />
+                    <TextBlock FontSize="17" Text="{Binding Path=PlayerLevel, StringFormat='{}{0} LVL'}" />
+                    <TextBlock FontSize="11" Text="{Binding Path=PlayerExperience, StringFormat='{}{0} exp'}" />
+                    <TextBlock FontSize="15" Margin="0,5,0,0" Foreground="Yellow" Text="{Binding Path=PlayerGold, StringFormat='{}{0} Gold'}">
+                        <TextBlock.Effect>
+                            <DropShadowEffect ShadowDepth="1" Direction="270" Color="Black" Opacity="0.8" BlurRadius="3" />
+                        </TextBlock.Effect>
+                    </TextBlock>
+                </StackPanel>
+            </Grid>
+
+            <Button Name="LocationGrizzly" Click="Location_Click" Style="{StaticResource location-grizlly}" Margin="21,285,0,0" />
+            <Button Name="LocationSisharpovo" Click="Location_Click" Style="{StaticResource location-sisharpovo}" Margin="140,100,0,0" />
+            <Button Name="LocationCanidae" Click="Location_Click" Style="{StaticResource location-canidae}" Margin="365,248,0,0" IsEnabled="True" />
+            <Button Name="LocationTelerik" Click="Location_Click" Style="{StaticResource location-telerik}" Margin="674,260,0,0" IsEnabled="False" />
+            <Button Name="LocationRhodope" Click="Location_Click" Style="{StaticResource location-rhodope}" Margin="536,40,0,0" IsEnabled="False" />
+
+        </Grid>
+        <Grid HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,0,10">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel.Resources>
+                    <Style BasedOn="{StaticResource small-menu-button}" TargetType="{x:Type Button}" />
+                </StackPanel.Resources>
+                <Button Content="Quit" Click="ButtonQuit_Click" />
+                <Button Content="Equipment" Click="ButtonEquipment_Click" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>
